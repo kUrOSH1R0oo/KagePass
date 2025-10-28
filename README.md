@@ -39,28 +39,26 @@ KagePass is a high-entropy password generator built with Flask. It provides adva
 1. Clone the project:
 
 ```bash
-project/
-├── app.py
-├── templates/
-│   └── index.html
-├── static/
-│   ├── script.js
-│   ├── styles.css
-│   └── a1sberg_logo.png
+git clone https://github.com/kUrOSH1R0oo/KagePass
 ```
 
 2. Install dependencies:
 
+```bash
 pip install flask rstr requests
+```
 
 3. Run the application:
 
+```bash
 python app.py
+```
 
 4. Open your browser at `http://localhost:5000`
 
 ## Project Structure
 
+```bash
 kagepass/
 ├── app.py                 # Flask backend
 ├── templates/
@@ -69,6 +67,7 @@ kagepass/
 │   ├── script.js          # Frontend JavaScript
 │   ├── styles.css         # Styling and animations
 │   └── a1sberg_logo.png   # Logo
+```
 
 ## API Endpoints
 
@@ -77,6 +76,7 @@ Generate passwords.
 
 **Request JSON**:
 
+```json
 {
   "numbers": 2,
   "lowercase": 4,
@@ -92,6 +92,7 @@ Generate passwords.
   "exclude_chars": "oO0",
   "output_format": "txt"
 }
+```
 
 **Response JSON**:
 
@@ -214,4 +215,5 @@ Built by kur0sh1ro for A1SBERG. Contact the organization for contributions.
 ---
 
 **Note:** Always use generated passwords responsibly. Ensure compliance with security policies, update passwords regularly, and enable multi-factor authentication where available.
+
 
