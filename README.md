@@ -96,6 +96,7 @@ Generate passwords.
 
 **Response JSON**:
 
+```json
 {
   "passwords": [
     {
@@ -105,18 +106,22 @@ Generate passwords.
     }
   ]
 }
+```
 
 ### POST /check_pwned
 Check password breaches.
 
 **Request JSON**:
 
+```json
 {
   "password": "password123"
 }
+```
 
 **Response JSON**:
 
+```json
 {
   "status": "Found",
   "sha1": "cbfdac6008f9cab4083784cbd1874f76618d2a97",
@@ -124,6 +129,7 @@ Check password breaches.
   "message": "Identified in data breaches. Change this password immediately.",
   "color": "red"
 }
+```
 
 ### POST /download
 Download generated passwords in TXT or JSON format.
@@ -185,8 +191,10 @@ Download generated passwords in TXT or JSON format.
 ### Debug Mode
 Enable Flask debug mode in `app.py`:
 
+```python
 if __name__ == '__main__':
     app.run(debug=True)
+```
 
 ## License
 Owned and maintained by A1SBERG Cybersecurity Organization of PUPSMB.
@@ -215,5 +223,6 @@ Built by kur0sh1ro for A1SBERG. Contact the organization for contributions.
 ---
 
 **Note:** Always use generated passwords responsibly. Ensure compliance with security policies, update passwords regularly, and enable multi-factor authentication where available.
+
 
 
